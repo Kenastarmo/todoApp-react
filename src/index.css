@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main_container{
+  min-height: 400px;
+  width: 500px;
+}
+
+.item-container {
+  display: flex;
+  
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.item {
+  list-style: none;
+  width: 80%;
+  max-width: 80%;
+  text-align: left;
+  background-color: white;
+  padding: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; 
+  white-space: normal;
+  word-wrap: break-word;  
+  }
+
+.list_container > ul > li {
+  display: flex;
+  align-items: center;
+  }
+
+.edit-btn, .trash-btn, .check-btn, .submit{
+  background-color: white;
+  border: none;
+  width: 40px;
+  cursor: pointer;
+}
+
+.check-btn{
+ border-top-right-radius: 8px;
+ border-bottom-right-radius: 8px;
+}
+  
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0px ;
+}
+
+  .form_container {
+    display: flex;
+    
+    width: 75%;
+    justify-content: center;
+  }
+
+  .input_task:focus{
+    outline: none;
+  }
+
+  .main_container > form{
+    display: flex;
+    justify-content: center;
+  }
+
+  .input_task {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+    padding: 8px;
+  }
+
+  .submit {
+    border: none;
+    background-color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .input_task{
+    width: 100%;
+  }
+
+  i{
+    pointer-events: none;
+  }
